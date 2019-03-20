@@ -1,15 +1,17 @@
 .footer {
   padding-top: 45px;
   color: #fff;
-  background-color: #1c1f21;
+  background-color: #6b66b1;
 }
 
 .footer__bottom {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
+  font-size: 14px;
+  font-weight: 700;
   letter-spacing: 0.01em;
-  border-top: 1px solid rgb(51, 51, 51);
+  background-color: #a6b222;
 }
 
 .footer__top {
@@ -24,7 +26,7 @@
   margin-bottom: 20px;
   font-size: 24px;
   letter-spacing: 0.01em;
-  font-weight: 400;
+  font-weight: 700;
   
   &--right {
     text-align: right;
@@ -87,11 +89,31 @@
   
   li {
     margin-bottom: 13px;
+    padding-left: 25px;
+    position: relative;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: rgb(98, 54, 179);
+    }
+  }
+  
+  a {
+    font-size: 14px;
+    color: #d3dbdc;
+    .transition();
   }
   
   a:hover,
   a:active {
-    text-decoration: underline;
+    color: #fff;
+    .transition();
   }
 }
 
@@ -115,13 +137,13 @@
 }
 
 .footer__all {
-  color: #999999;
+  color: #fff;
+  font-size: 14px;
   letter-spacing: 0.01em;
   text-decoration: underline;
   
   &:hover,
   &:active {
     text-decoration: none;
-    color: #fff;
   }
 }
