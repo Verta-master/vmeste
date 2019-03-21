@@ -1,0 +1,30 @@
+.title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #313233;
+  text-transform: uppercase;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 122px;
+    height: 4px;
+    background-color: @green;
+  }
+}
+
+.subtitle {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 14px;
+  color: #636465;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+}
