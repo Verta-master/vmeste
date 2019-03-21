@@ -12,9 +12,9 @@
   <header class="header">
     <div class="header__top">
       <div class="wrapper header__top-wrap">
-        <p class="header__link">Мы находимся:<span>г. Москва, ул. Гагарина, 25/1 2й этаж</span></p>
-        <p class="header__link">Email:<a href="mailto:psoriazu_net@gmail.com">psoriazu_net@gmail.com</a></p>
-        <p class="header__link">Свяжитесь с нами по тел.:<a href="tel:+74954114512">+7 (495) <b>411 45 12</b></a></p>
+        <p class="header__link header__link--address"><i>Мы находимся:</i><span>г. Москва, ул. Гагарина, 25/1 2й этаж</span></p>
+        <p class="header__link"><i>Email:</i><a href="mailto:psoriazu_net@gmail.com">psoriazu_net@gmail.com</a></p>
+        <p class="header__link"><i>Свяжитесь с нами по тел.:</i><a href="tel:+74954114512">+7 (495) <b>411 45 12</b></a></p>
       </div>
     </div>
     <div class="header__nav">
@@ -279,6 +279,7 @@
   </footer>
   
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
 
   <!-- Slider -->
@@ -293,6 +294,13 @@
       preventClicksPropagation: false,
       slidesPerView: 'auto',
       spaceBetween: 10,
+    });
+  </script>
+  
+  <!-- Navigation buttons -->
+  <script>
+    $('.nav__btn').click(function() {
+      $(this).next().slideToggle();
     });
   </script>
 </body>
