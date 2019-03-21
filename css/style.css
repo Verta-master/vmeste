@@ -635,6 +635,34 @@ button {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+.title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #313233;
+  text-transform: uppercase;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 122px;
+  height: 4px;
+  background-color: #a6b222;
+}
+.subtitle {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 14px;
+  color: #636465;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+}
 .promo {
   min-height: 600px;
   padding-top: 75px;
@@ -806,6 +834,100 @@ button {
 .nav__list a:hover,
 .nav__list a:active {
   text-decoration: underline;
+}
+.about {
+  padding-top: 100px;
+  padding-bottom: 110px;
+}
+.about__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.about__img {
+  width: 48%;
+}
+.about__img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.about__info {
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.about__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.about__list li {
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 35px;
+}
+.about__list li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 28px;
+  background-image: url(../img/icons/pharmacy.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.about__btn {
+  max-width: 280px;
+  margin-top: auto;
+}
+.slogan {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url(../img/images/bg-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.slogan__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.slogan__wrap p {
+  margin: 0;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.team {
+  padding-top: 100px;
+  padding-bottom: 110px;
+  background-color: #edeff6;
+}
+.team__wrap {
+  position: relative;
 }
 .footer {
   padding-top: 45px;
