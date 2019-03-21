@@ -18,6 +18,15 @@
     height: 4px;
     background-color: @green;
   }
+  
+  &--center {
+    text-align: center;
+    
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }
 
 .subtitle {
