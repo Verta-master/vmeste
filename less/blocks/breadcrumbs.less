@@ -1,0 +1,26 @@
+.breadcrumbs {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  background-color: #edeff6;
+}
+
+a.breadcrumbs__link {
+  &::after {
+    content: "/";
+    margin-left: 5px;
+  }
+  &:hover,
+  &:active {
+    color: @violet;
+    
+    &::after {
+      color: #313233;
+    }
+  }
+}
+
+span.breadcrumbs__link {
+  color: @violet;
+}
