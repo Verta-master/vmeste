@@ -1,0 +1,94 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.nav__section {
+  width: 50%;
+  
+  &:first-child {
+    border-right: 1px solid #fff;
+  }
+}
+
+.nav__btn {
+  position: relative;
+  width: 100%;
+  height: 95px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 150px;
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: @green;
+  background-repeat: no-repeat;
+  background-position: center left 50px;
+  
+  &--patient {
+    background-image: url(../img/icons/icon-1.png);
+    background-size: 74px 43px;
+  }
+  
+  &--doctor {
+    background-image: url(../img/icons/icon-2.png);
+    background-size: 65px 65px;
+  }
+  
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 45px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 22px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAWCAYAAACyjt6wAAABjUlEQVRIic2WSUoDURRFb4wmsUd0J06cuQK34wbUDYgD0YBijAoaGwSbmYrYN4gt2GzEwXHw8/FRJrE6mwsFVfXfu/fw+Y+qDDAkqV/SmKR3/R+NSLoTnzoGsoD+wbXnoZokbVSJByQdSWr+sz1z2pc0WL3f9cQbZifPgdwf7dyB4dgBZBdXzeIFkP9FsAxwaPK3/VqwcM0UXf4SZBNwVAuuFqCAiim+Bgo/CJcFTkzeVrCmXuOKaboBWn8ArgU4NTmbteoaGSyZ5lugPUW4HG4Yvdbr1X5ntGBM7oDOFODyuCH0Wm1UH8awbMzuE0LmgauwcGEBBcwb04eYkAXc0HlVwvRFCSgZ80egO0JvG27YvJbD9kbdhVkT8gz0hOjpwA2Z12KUzDjnqGjCXoC+BrVduHPrVY6aFwcwCPlaB7ITd15jwyUBFDAVgOxtAFeKm5MEMAj5hvvoC3gy7+eSZCQFFDBpYK6AM/M8k9Q/DUABE3xVMQ3vtAAFjBu46bR8M0Cav+vDknKSRtMy/ABtMGtFqUIpqQAAAABJRU5ErkJggg==');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.nav__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 255px;
+  padding: 40px;
+  padding-bottom: 20px;
+  color: #fff;
+  letter-spacing: 0.06em;
+  background-color: rgb(107, 102, 177);;
+  
+  li {
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 20px;
+    width: 50%;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: -3px;
+      left: 0;
+      width: 20px;
+      height: 28px;
+      background-image: url(../img/icons/pharmacy.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  
+  a:hover,
+  a:active {
+    text-decoration: underline;
+  }
+}

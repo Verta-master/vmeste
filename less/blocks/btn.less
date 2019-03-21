@@ -1,3 +1,21 @@
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 35px;
+  font-size: 14px;
+  letter-spacing: 0.075em;
+  color: #fff;
+  line-height: 1;
+  border-radius: 4px;
+  background-color: rgb(107, 102, 177);
+  border: 1px solid rgb(107, 102, 177);
+  .transition();
   
+  &:hover,
+  &:active {
+    color: @violet;
+    background-color: rgba(255,255,255,0);
+    .transition();
+  }
 }
