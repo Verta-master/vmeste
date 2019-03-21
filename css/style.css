@@ -1408,6 +1408,8 @@ span.breadcrumbs__link {
   .nav__list {
     height: auto;
     min-height: 400px;
+    padding-left: 20px;
+    padding-right: 10px;
   }
   .nav__list li {
     width: 100%;
